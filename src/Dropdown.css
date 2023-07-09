@@ -1,0 +1,80 @@
+.DropdownForm {
+  position: relative;
+  display: inline-block;
+}
+
+.DropdownForm .Login {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.DropdownForm .Login li {
+  margin: 0 10px;
+}
+
+.DropdownForm .Login button {
+  padding: 0;
+  margin: 0;
+  border: none;
+  color: #0af2cb;
+  font-weight: 800;
+  background-color: transparent;
+  font-size: 20px;
+  cursor: pointer;
+}
+
+.DropdownForm-content {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 10px;
+  background-color: #fff;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  z-index: 1;
+}
+
+/* .DropdownForm-content .closeBtn {
+  align-self: flex-end;
+  margin: 0;
+  padding: 0;
+  color: #fff;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+} */
+.closeBtn {
+  align-self: flex-end;
+  background-color: transparent;
+  margin: 0;
+  padding: 0;
+  color: black;
+  border: none;
+  font-size: 14px;
+  cursor: pointer;
+}
+.DropdownForm-content form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.DropdownForm-content form input {
+  margin-bottom: 10px;
+  padding: 5px;
+  width: 200px;
+}
+
+.DropdownForm-content form button[type="submit"] {
+  padding: 5px 10px;
+  background-color: #0af2cb;
+  color: #fff;
+  border: none;
+  cursor: pointer;
+}
