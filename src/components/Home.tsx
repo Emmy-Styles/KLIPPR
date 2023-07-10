@@ -70,7 +70,7 @@ const Home = () => {
       <main className="main">
         <h1 className="title">SnapLink</h1>
         <div className="geturl">
-          <input type="text" disabled value={shorten} />
+          <input type="text" disabled value={shorten} className="shortLink" />
           <input
             type="url"
             value={input}
@@ -225,19 +225,19 @@ const Home = () => {
         </div>
       </main>
       <footer>
-        <div className="footer">
+        <div className="logoSocials">
           <div>
-            <div>
-              <FiLink className="icon" /> <span>|</span>{" "}
-              <span className="logo">SnapLink</span>
-            </div>
-            <div className="socials">
-              <FaFacebookF className="facebook" />
-              <FaTwitter className="twitter" />
-              <FaInstagram className="instagram" />
-              <FaLinkedinIn className="linkedin" />
-            </div>
+            <FiLink className="icon" /> <span>|</span>{" "}
+            <span className="logo">SnapLink</span>
           </div>
+          <div className="socials">
+            <FaFacebookF className="facebook" />
+            <FaTwitter className="twitter" />
+            <FaInstagram className="instagram" />
+            <FaLinkedinIn className="linkedin" />
+          </div>
+        </div>
+        <div className="SecondDetails">
           <div>
             <div className="Why">
               <h4>Why SnapLink</h4>
@@ -312,8 +312,6 @@ const Home = () => {
               </li>
             </ul>
           </div>
-        </div>
-        <div className="footerBottom">
           <div>
             <h4>Resources</h4>
             <ul className="resources">
