@@ -9,6 +9,7 @@ import {
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
+  FaCopy,
 } from "react-icons/fa";
 import { db } from "./config/config";
 import { collection, addDoc } from "firebase/firestore";
@@ -17,6 +18,7 @@ const tinyid = require("tiny-unique-id");
 const Home = () => {
   const [input, setInput] = useState("");
   const [shorten, setShorten] = useState("");
+  const [isCopied, setIsCopied] = useState(false);
 
   const handleDb = async () => {
     const slug = tinyid.unique();
@@ -24,7 +26,21 @@ const Home = () => {
       url: input,
       slug: slug,
     });
-    setShorten(`${window.location.origin}/${slug}`);
+    setShorten(slug);
+  };
+
+  const copyToClipboard = () => {
+    const textField = document.createElement("textarea");
+    textField.value = shorten;
+    document.body.appendChild(textField);
+    textField.select();
+    document.execCommand("copy");
+    textField.remove();
+    setIsCopied(true);
+
+    setTimeout(() => {
+      setIsCopied(false);
+    }, 3000);
   };
 
   const scrollToSection = (sectionId: string) => {
@@ -70,7 +86,26 @@ const Home = () => {
       <main className="main">
         <h1 className="title">SnapLink</h1>
         <div className="geturl">
-          <input type="text" disabled value={shorten} className="shortLink" />
+          <div className="shortLinkContainer">
+            <input
+              type="text"
+              disabled
+              value={shorten ? shorten : ""}
+              className="shortLink"
+              onClick={() => {
+                if (shorten) {
+                  window.location.href = shorten;
+                }
+              }}
+            />
+            {shorten && (
+              <a className="copyButton" onClick={copyToClipboard}>
+                <FaCopy className="copyIcon" />
+              </a>
+            )}
+          </div>
+          {isCopied && <p className="copySuccess">Link copied to clipboard!</p>}
+
           <input
             type="url"
             value={input}

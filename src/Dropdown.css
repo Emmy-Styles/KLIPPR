@@ -1,6 +1,7 @@
 .DropdownForm {
   position: relative;
   display: inline-block;
+  margin-right: 30px;
 }
 
 .DropdownForm .Login {
@@ -34,21 +35,13 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 10px;
+  padding: 5px 10px;
   background-color: #fff;
   box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  border-radius: 5px;
   z-index: 1;
 }
 
-/* .DropdownForm-content .closeBtn {
-  align-self: flex-end;
-  margin: 0;
-  padding: 0;
-  color: #fff;
-  border: none;
-  font-size: 14px;
-  cursor: pointer;
-} */
 .closeBtn {
   align-self: flex-end;
   background-color: transparent;
@@ -66,15 +59,17 @@
 }
 
 .DropdownForm-content form input {
-  margin-bottom: 10px;
-  padding: 5px;
-  width: 200px;
+  margin: 10px auto;
+  padding: 2px;
+  width: 90%;
 }
 
 .DropdownForm-content form button[type="submit"] {
-  padding: 5px 10px;
+  padding: 3px 8px;
+  margin: 3px auto;
   background-color: #0af2cb;
   color: #fff;
   border: none;
   cursor: pointer;
+  font-size: 14px;
 }

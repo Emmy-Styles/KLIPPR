@@ -56,11 +56,9 @@ body {
   margin: 0 10px;
 }
 
-/* .App-logo {
-  height: 100px;
-  width: 150px;
-  margin: 10px;
-} */
+.Login {
+  margin-top: 30px;
+}
 
 main {
   display: flex;
@@ -89,7 +87,7 @@ input {
   margin-bottom: 0;
   margin-top: 30px;
   width: 40%;
-  padding: 10px;
+  padding: 10px 35px;
   border-radius: 5px;
   border: 1px solid #282c34;
   border-bottom: none;
@@ -97,7 +95,7 @@ input {
   background-color: white;
 }
 
-button {
+.geturl button {
   padding: 5px 30px;
   border-radius: 5px;
   border: 1px solid #ccc;
@@ -110,7 +108,7 @@ button {
   border-left: none;
   transition: ease-in-out all 750ms;
 }
-button:hover {
+.geturl button:hover {
   cursor: pointer;
   color: whitesmoke;
   background-color: #07826e;
@@ -124,6 +122,26 @@ button:hover {
   margin: 10px;
   display: grid;
   place-items: center;
+}
+.shortLinkContainer {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.copyButton {
+  position: relative;
+  right: 10%;
+  top: 15px;
+  background: none;
+  border: none;
+  cursor: pointer;
+  color: #555;
+}
+
+.copySuccess {
+  margin-top: 4px;
+  color: #0af2cb;
 }
 
 .description p {
