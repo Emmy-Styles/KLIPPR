@@ -2,10 +2,10 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  font-family: "Roboto", sans-serif;
+  font-family: 'Poppins', sans-serif;
 }
 body {
-  background-color: #282c34;
+  background-color: #c2d3f6;
 }
 
 .App-header {
@@ -16,26 +16,28 @@ body {
 
 .icon {
   font-size: 22px;
-  rotate: 90deg;
+  rotate: 45deg;
   margin-top: 30px;
-  color: #0af2cb;
-  font-weight: 800;
+  color: #0982e4;
+  font-weight: 400;
   margin-left: 10px;
 }
 
 .App-header span {
-  color: #0af2cb;
+  color: #0982e4;
   font-weight: 800;
   font-size: 22px;
+  font-family: 'Poppins', sans-serif;
 }
 .menu button {
   padding: 0;
   margin: 0;
   border: none;
-  color: #0af2cb;
-  font-weight: 800;
-  background-color: #282c34;
+  color: #333;
+  font-weight: 200;
+  background-color: #c2d3f6;
   font-size: 20px;
+  transition: 0.3s;
 }
 
 .menu button:hover {
@@ -69,7 +71,7 @@ main {
 
 .title {
   text-align: center;
-  color: #0af2cb;
+  color: #0982e4;
   margin: 40px 0;
 }
 
@@ -89,7 +91,7 @@ input {
   width: 40%;
   padding: 10px 35px;
   border-radius: 5px;
-  border: 1px solid #282c34;
+  border: 1px solid #4c7de0;
   border-bottom: none;
   outline: none;
   background-color: white;
@@ -100,9 +102,10 @@ input {
   border-radius: 5px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
-  background-color: #0af2cb;
-  color: #282c34;
-  font-weight: bold;
+  background-color: #0982e4;
+  color: #fff;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
   font-size: 1.3rem;
   cursor: pointer;
   border-left: none;
@@ -110,14 +113,14 @@ input {
 }
 .geturl button:hover {
   cursor: pointer;
-  color: whitesmoke;
-  background-color: #07826e;
+  padding: 7px 35px;
+  transition: 0.2s;
 }
 
 .geturl {
   width: 60%;
-  background-color: #32363e;
-  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.4);
+  background-color: #c2d3f6;
+  box-shadow: 0 2px 4px rgba(123, 77, 214, 0.4);
   border-radius: 2px;
   margin: 10px;
   display: grid;
@@ -141,13 +144,13 @@ input {
 
 .copySuccess {
   margin-top: 4px;
-  color: #0af2cb;
+  color: #0982e4;
 }
 
 .description p {
-  color: #fff;
+  color: #333;
   font-size: 18px;
-  font-weight: 400;
+  font-weight: 100;
   margin: 10px;
   text-align: center;
   width: 100%;
@@ -172,8 +175,9 @@ input {
 }
 .faqSection h1 {
   text-align: center;
-  color: #0af2cb;
-
+  color: #0982e4;
+  font-family: 'Poppins', sans-serif;
+  font-weight: bolder;
   margin: 40px 0;
 }
 .faqItem {
@@ -186,22 +190,26 @@ input {
 .faqQuestion {
   display: flex;
   align-items: center;
-  color: #fff;
+  color: #333;
   cursor: pointer;
+  font-family: 'Poppins', sans-serif;
+  font-weight: lighter;
+  padding: 0.2rem;
 }
 
 .faqSign {
-  font-size: 20px;
+  font-size: 22px;
+  padding-right: 5px;
 }
 
 .faqText {
-  font-size: 2rem;
+  font-size: 1.5rem;
 }
 
 .faqAnswer {
   margin-top: 10px;
-  font-size: 1.5rem;
-  color: #ccc;
+  font-size: 1rem;
+  color: #0982e4;
 }
 
 /* FAQ section */
@@ -222,13 +230,13 @@ input {
 }
 
 .stats h1 {
-  color: #0af2cb;
+  color: #0982e4;
 }
 .possibilities h1 {
-  color: #0af2cb;
+  color: #0982e4;
 }
 .stats span {
-  color: #fff;
+  color: #333;
 }
 
 .functions {
@@ -239,11 +247,11 @@ input {
 }
 
 .functions h1 {
-  color: #0af2cb;
+  color: #0982e4;
 }
 
 .functions span {
-  color: #fff;
+  color: #333;
 }
 /* features section */
 
@@ -253,17 +261,13 @@ input {
 }
 .pricingSection h1 {
   text-align: center;
-  color: #0af2cb;
+  color: #0982e4;
   margin: 40px 0;
   padding: 0;
 }
 
-.pricingSection span {
-  color: green;
-}
-
 .pricingSection p {
-  color: #fff;
+  color: #333;
   font-size: 18px;
   font-weight: 300;
   text-align: center;
@@ -281,7 +285,7 @@ input {
 }
 
 .first {
-  border: 1px solid #ccc;
+  border: 1px solid #0982e4;
   border-radius: 10px;
   padding: 20px 25px;
   display: flex;
@@ -293,28 +297,38 @@ input {
 .second:hover,
 .third:hover {
   transform: scale(1.1);
-  border: 1px solid #0af2cb;
-  background-color: #32363e;
+  border: 1px solid #0982e4;
+  margin: 0.7rem;
+  background-color: #96bdf1;
+  transition: 0.3s;
 }
+
+.first:hover span,
+.second:hover span,
+.third:hover span {
+  color: #fff;
+}
+
+
 .first h1 {
-  color: #0af2cb;
+  color: #0982e4;
   margin-bottom: 5px;
 }
 .first h2,
 h3 {
-  color: #0af2cb;
+  color: #0982e4;
   margin: 0 0 0 30px;
   padding: 0;
 }
 .first span {
-  color: #fff;
+  color: #333;
   font-size: 16px;
   font-weight: 200;
   margin-left: 30px;
   padding: 0;
 }
 .second {
-  border: 1px solid #ccc;
+  border: 1px solid #0982e4;
   border-radius: 10px;
   padding: 20px 25px;
   display: flex;
@@ -323,24 +337,24 @@ h3 {
   transition: transform 0.3s ease;
 }
 .second h1 {
-  color: #0af2cb;
+  color: #0982e4;
   margin-bottom: 5px;
 }
 .second h2,
 h3 {
-  color: #0af2cb;
+  color: #0982e4;
   margin: 0 0 0 30px;
   padding: 0;
 }
 .second span {
-  color: #fff;
+  color: #333;
   font-size: 16px;
   font-weight: 200;
   margin-left: 30px;
   padding: 0;
 }
 .third {
-  border: 1px solid #ccc;
+  border: 1px solid #0982e4;
   border-radius: 10px;
   padding: 20px 25px;
   display: flex;
@@ -349,17 +363,17 @@ h3 {
   transition: transform 0.3s ease;
 }
 .third h1 {
-  color: #0af2cb;
+  color: #0982e4;
   margin-bottom: 5px;
 }
 .third h2,
 h3 {
-  color: #0af2cb;
+  color: #0982e4;
   margin: 0 0 0 30px;
   padding: 0;
 }
 .third span {
-  color: #fff;
+  color: #333;
   font-size: 16px;
   font-weight: 200;
   margin-left: 30px;
@@ -367,13 +381,13 @@ h3 {
 }
 
 .PriceBtn button {
-  padding: 15px 35px;
-  border-radius: 5px;
+  padding: 10px 25px;
+  border-radius: 10px;
   border: 1px solid #ccc;
   margin-bottom: 10px;
-  background-color: #0af2cb;
-  color: #282c34;
-  font-weight: bold;
+  background-color: #0982e4;
+  color: #fff;
+  font-weight: lighter;
   font-size: 1.5rem;
   cursor: pointer;
   display: grid;
@@ -383,8 +397,9 @@ h3 {
 }
 .PriceBtn button:hover {
   cursor: pointer;
-  color: whitesmoke;
-  background-color: #07826e;
+  transition: 0.2s;
+  font-weight: light;
+  padding: 15px 35px;
 }
 /* pricing */
 
@@ -407,25 +422,25 @@ footer {
 }
 .SecondDetails li a {
   text-decoration: none;
-  color: #fff;
+  color: black;
   font-size: 18px;
 }
 .SecondDetails li a:hover {
-  text-decoration: underline;
-  color: #0af2cb;
+  text-decoration: none;
+  color: #0982e4;
 }
 .SecondDetails h4 {
-  color: #0af2cb;
+  color: #0982e4;
   font-size: 24px;
   margin-bottom: 10px;
 }
 .logoSocials span {
-  color: #0af2cb;
+  color: #0982e4;
   font-size: 1.5rem;
   line-height: 1.5;
 }
 .logo {
-  color: #0af2cb;
+  color: #0982e4;
   font-size: 1.5rem;
 }
 .socials {
@@ -442,7 +457,7 @@ footer {
   cursor: pointer;
 }
 .footer span {
-  color: #0af2cb;
+  color: #0982e4;
 }
 .footerLogo {
   display: flex;
@@ -451,7 +466,7 @@ footer {
 
 .footerLogo span {
   margin-right: 5px;
-  color: #0af2cb;
+  color: #0982e4;
 }
 .facebook {
   color: #fff;
@@ -487,6 +502,9 @@ footer {
   transform: scale(1.5);
 }
 
+.solutionsList li {
+  color: #333;
+}
 /* footer */
 
 @media (max-width: 992px) {
@@ -503,6 +521,7 @@ footer {
     grid-template-columns: auto;
     gap: 20px;
   }
+  
   .logoSocials {
     display: flex;
     flex-direction: column;

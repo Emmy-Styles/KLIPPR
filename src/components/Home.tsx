@@ -2,14 +2,16 @@ import React, { useState } from "react";
 import "../App.css";
 import Faqs from "./Faqs";
 import DropdownForm from "./DropdownForm";
-import { FiLink } from "react-icons/fi";
+// import { FiLink } from "react-icons/fi";
 import { BsCheck2Circle } from "react-icons/bs";
+import { FaPaperclip } from "react-icons/fa";
 import {
   FaFacebookF,
   FaTwitter,
   FaInstagram,
   FaLinkedinIn,
   FaCopy,
+  FaHandScissors,
 } from "react-icons/fa";
 import { db } from "./config/config";
 import { collection, addDoc } from "firebase/firestore";
@@ -54,14 +56,14 @@ const Home = () => {
     <div>
       <header className="App-header">
         <div>
-          <FiLink className="icon" /> <span>|</span>{" "}
-          <span className="logo">SnapLink</span>
+          <FaPaperclip className="icon" /> <span>|</span>{" "}
+          <span className="logo">Klippr</span>
         </div>
         <div>
           <ul className="menu">
             <li>
-              <button onClick={() => scrollToSection("Snaplink")}>
-                SnapIt
+              <button onClick={() => scrollToSection("Klippr")}>
+                KlipIt
               </button>
             </li>
             <li>
@@ -84,7 +86,7 @@ const Home = () => {
         </div>
       </header>
       <main className="main">
-        <h1 className="title">SnapLink</h1>
+        <h1 className="title">Klippr</h1>
         <div className="geturl">
           <div className="shortLinkContainer">
             <input
@@ -112,11 +114,11 @@ const Home = () => {
             placeholder="Enter Your URL Here"
             onChange={(e) => setInput(e.target.value)}
           />
-          <button onClick={handleDb}>Generate</button>
+          <button onClick={handleDb}>Klip</button>
           <div className="description">
             <p>
               {" "}
-              SnapLink is a fast and convenient URL management tool. <br />{" "}
+              Klippr is a fast and convenient URL management tool. <br />{" "}
               Enter your long URLs here and instantly generate shortened links.{" "}
               <br />
             </p>
@@ -155,34 +157,34 @@ const Home = () => {
           <div className="functions">
             <span>
               <h1>URL Shortening</h1> <br />
-              SnapLink allows you to shorten URLs of your business, events.
+              Klippr allows you to shorten URLs of your business, events.
               Shorten your URL at scale, URL redirects
             </span>
             <span>
               <h1>QR Code Generator</h1> <br />
-              SnapLink allows you to generate QR codes for your business,
+              Klippr allows you to generate QR codes for your business,
               events. Bring your customers and audience to your doorstep with
               this scan and go solution
             </span>
             <span>
               <h1>Custom URL</h1> <br />
-              SnapLink allows you to customize your URL to your preference. Make
+              Klippr allows you to customize your URL to your preference. Make
               your URL memorable and recognizable
             </span>
             <span>
               <h1>URL Analytics</h1> <br />
-              SnapLink allows you to track your URL performance. Track your URL
+              Klippr allows you to track your URL performance. Track your URL
               clicks, location, device, browser, and more
             </span>
           </div>
         </div>
         <div id="pricing" className="pricingSection">
           <h1>
-            A <span>price perfect</span> for your needs
+            A price perfect for your needs
           </h1>
           <p>
             From catering to your personal, business, events, social needs, you
-            can be rest assured we have you in mind with out pricing
+            can be rest assured we have you in mind with our pricing
           </p>
           <div className="prices">
             <div className="first">
@@ -262,8 +264,8 @@ const Home = () => {
       <footer>
         <div className="logoSocials">
           <div>
-            <FiLink className="icon" /> <span>|</span>{" "}
-            <span className="logo">SnapLink</span>
+            <FaPaperclip className="icon" /> <span>|</span>{" "}
+            <span className="logo">Klippr</span>
           </div>
           <div className="socials">
             <FaFacebookF className="facebook" />
@@ -275,10 +277,10 @@ const Home = () => {
         <div className="SecondDetails">
           <div>
             <div className="Why">
-              <h4>Why SnapLink</h4>
+              <h4>Why Klippr</h4>
               <ul className="whySnap">
                 <li>
-                  <a href="#">Snaplink 101</a>
+                  <a href="#">Klippr 101</a>
                 </li>
                 <li>
                   <a href="#">Integrations & API</a>
@@ -328,7 +330,7 @@ const Home = () => {
             <h4>Company</h4>
             <ul className="company">
               <li>
-                <a href="#">About SnapLink</a>
+                <a href="#">About Klippr</a>
               </li>
               <li>
                 <a href="#">Careers</a>
