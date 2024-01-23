@@ -422,7 +422,7 @@ footer {
 }
 .SecondDetails li a {
   text-decoration: none;
-  color: black;
+  color: #333;
   font-size: 18px;
 }
 .SecondDetails li a:hover {
